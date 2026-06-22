@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Elgel Hotel and Spa</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+    background: linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.95)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1920&auto=format&fit=crop')
+    no-repeat center center fixed;
+    background-size: cover;
+}
+</style>
+</head>
+
+<body class="text-slate-100 min-h-screen flex flex-col justify-between">
+
+<!-- HEADER -->
+<header class="w-full bg-white/10 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div>
+            <h1 class="text-3xl font-bold text-amber-400">
+                Elgel HOTEL AND SPA
+            </h1>
+
+            <p class="text-sm text-slate-300 uppercase">
+                Motherhood & Service
+            </p>
+        </div>
+
+        <a href="index.html"
+           class="border border-slate-300 px-4 py-2 rounded-lg hover:text-amber-400">
+            Back to Dashboard
+        </a>
+    </div>
+</header>
+
+<!-- LOGIN -->
+<main class="flex-grow flex items-center justify-center px-4">
+
+<div class="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+
+    <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold">Welcome Back</h2>
+        <p class="text-slate-400 text-sm">
+            Sign in to continue
+        </p>
+    </div>
+
+    <form onsubmit="handleLogin(event)" class="space-y-5" action="login.php" method="POST">
+        
+
+        <input type="text"         name="username"
+               id="username"
+               placeholder="Username"
+               required
+               class="w-full bg-slate-900/40 border border-white/10 rounded-xl py-3 px-4">
+
+        <input type="password" name="password"
+               id="password"
+               placeholder="Password"
+               required
+               class="w-full bg-slate-900/40 border border-white/10 rounded-xl py-3 px-4">
+
+        <div class="text-right">
+            <a href="forgot-password.html"
+               class="text-amber-400 text-sm hover:underline">
+                Forgot Password?
+            </a>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 rounded-xl">
+            Sign In
+        </button>
+
+    </form>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950/40 border-t border-white/5 py-6 text-center text-sm text-slate-400">
+    <p>© 2026 Elgel Hotel and Spa</p>
+</footer>
+
+
+
+</body>
+</html>
